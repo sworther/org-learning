@@ -8,8 +8,44 @@
    | C-c C-b  |         | previous heading same level       |
    | C-c C-u  | g h     | backaward to higher level heading |
 ** literal programming
-      <s  tab
-      C-c ' 
+      
+   | function  | keystroks |
+   |-----------+-----------|
+   | start     | <s Tab    |
+   | edit      | C-c '     |
+   | exit edit | C-c '     |
+   | run       | C-c C-c   |
+     
+   template
+   | shortcut | meaning |
+   |----------+---------|
+   | e        | example |
+   | s        | source  |
+   | c        | center  |
+   | h        | html    |
+   | i        | index   |
+   | I        | include |
+   | l        | latex   |
+   | a        | ascii   |
+
+    #+BEGIN_SRC sh
+    ls -l
+    #+END_SRC
+
+
+    #+BEGIN_SRC python :results output 
+      import sys
+      print (sys.version)
+      print("hello world")
+    #+END_SRC
+
+    #+RESULTS:
+    : 3.6.2 |Anaconda custom (64-bit)| (default, Jul 20 2017, 13:51:32) 
+    : [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+    : hello world
+
+
+
 ** list
    - ordered :: 1. 1)
    - unorderd :: - + *
