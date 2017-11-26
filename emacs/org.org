@@ -12,7 +12,7 @@
    | function  | keystroks |
    |-----------+-----------|
    | start     | <s Tab    |
-   | edit      | C-c '     |
+   | edit      | C-c '    |
    | exit edit | C-c '     |
    | run       | C-c C-c   |
      

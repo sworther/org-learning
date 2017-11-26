@@ -1,0 +1,22 @@
+*  emacs
+**  dired
+| key          | command              |
+|--------------+----------------------|
+| %            | dired command        |
+| !            | shell command        |
+| =            | dired diff           |
+| $            | hide directory       |
+| i on dir     | insert sub dir       |
+| <            | jump to prev sub dir |
+| >            | jump to next sub dir |
+| C-/ or C-x u | dired undo           |
+|              |                      |
+**  info
+
+| T	| Go to table of contents of the current Info file.
+| i | Look up a topic in this file’s Index and move to its node.
+| n | Go to this node’s "Next" node.
+| p | Go to this node’s "Previous" node.  (*not* chronological)
+| ^	| Go "Up" from this node to its parent node.
+| d	| Go to the Info directory (root) node.
+| f	| Follow a cross reference. Prompts for name.

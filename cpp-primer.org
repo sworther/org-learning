@@ -1,0 +1,4 @@
+*  primer
+**  chapter 12 
+   * weak_ptr  lock()?
+  [[file:~/interview/primer/12/StrBlob.h::l%20=%20lhs.wptr.lock(),%20r%20=%20rhs.wptr.lock();]]
