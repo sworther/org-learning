@@ -1,0 +1,97 @@
+* org
+** motion
+   | shortcut | short 2 | meaning                           |
+   |----------+---------+-----------------------------------|
+   | C-c C-n  |         | next heading                      |
+   | C-c C-p  | g p     | previous heading                  |
+   | C-c C-f  |         | next heading same level           |
+   | C-c C-b  |         | previous heading same level       |
+   | C-c C-u  | g h     | backaward to higher level heading |
+** literal programming
+      <s  tab
+      C-c ' 
+** list
+   - ordered :: 1. 1)
+   - unorderd :: - + *
+   - { C-c - | S-arrow } :: cycle through - + * 1) 1.
+   -  C-c - :: active list
+   - term :: description
+** table 
+   - C-c RET :: Insert a horizontal line
+   - C-c ^ :: sort the table line
+ 
+** entry/list
+   - M-{<^>} :: move the current item/entry
+   - M-S-{<^>} :: move recursive
+   - M-RET :: Insert a new item/entry
+   - M-S-RET :: Insert with checkbox/todo
+   - C-c C-c :: toggle checkbox/todo state  or Re-align table
+   - C-c RET :: start a table
+*** comparation among entry list and table
+   | keystroks | entry              | list              | table       |
+   |-----------+--------------------+-------------------+-------------|
+   | M-{<^>}   | move current entry | move current item | move        |
+   | M-S-{<^>} | move recursive     | move recursive    | kill/insert |
+   | M-RET     | insert entry       | insert item       |             |
+   | M-S-RET   | with todo          | with checkbox     |             |
+   | C-c C-c   | toggle todo        | toggle checkbox   | Re-align    |
+** refile
+*** related variable 
+    org-refile-targets
+*** arckiving
+    - {, A | C-c $} ::  org-archive-subtree
+** sparse tree
+** Date & time
+*** time range 
+    S-left/right change date at cursor by one day
+    S-up/down    change item  under the  cursor by one minute/hour/day/month/year
+    - Plain timestamp ::  { C-c . | , . }
+         <2017-03-15 Wed 18:00>
+    - Timestamp with repeater interval ::  (+1d/w/m/y)
+        <2017-03-15 Wed 18:00 +1w>
+    - Time/Date range :: 2{ C-c . }
+         <2017-03-15 Wed 18:00>--<2017-03-15 Wed 20:00>
+    - Inactive timestamp :: { C-c ! | , !}
+         [2017-03-15 Wed 18:00]
+         didn't show up in the agenda
+*** deadline and sheduling
+    SCHEDULED: <2017-03-15 Wed 18:00> DEADLINE: <2017-03-15 Wed 20:00>
+    - Deadline :: { C-c,C-d | , d }
+    - Scheduled :: {C-c,C-s | , s }
+*** Clocking work time
+    :LOGBOOK:
+    CLOCK: [2017-03-15 Wed 22:44]--[2017-03-15 Wed 22:53] =>  0:09
+    CLOCK: [2017-03-15 Wed 21:28]--[2017-03-15 Wed 21:38] =>  0:10
+    :END:
+    - prefix :: C-c C-x
+    - org-clock-in ::     { prefix, C-i | , I }
+    - org-clock-out ::    { prefix, C-o | , O }
+    - org-clock-cancel :: { prefix, C-q | , q }
+    - org-clock-goto  ::  { prefix, C-j }
+    - org-clock-report :: { prefix, C-r }
+    - org-clock-modify-effort-estimate  :: { prefix C-e }
+** todo 
+*** priorities 
+    only matter in agenda
+    - C-c , :: set priority
+    - S-up/down :: Increase/Decrease the priority
+*** breaking tasks down into subtasks
+    use cookies [/] and [%] to keep the overview
+** tags                                                                :tags:
+*** tags searches
+    | shortcut | shortcut2 | meaning                          |
+    |----------+-----------+----------------------------------|
+    | C-c / m  |  C-c \    | sparse tree match tags           |
+    | C-c m    |           | global list from all agenda file |
+    | C-c M    |           | global list only todo items      |
+*** what for ?
+    assign tags to headlines
+    an excellent way to implement labels and contexts for cross-correlating information 
+*** how ?
+    { C-c,C-c | , , | , : }at the headline
+*** tags inheritance
+** properites
+   - { C-c C-x p | , P } :: org-set-property
+   - { C-c C-c d  } :: org-delete-property
+
+                       

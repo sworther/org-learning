@@ -1,0 +1,33 @@
+* spacemacs
+** helm
+*** helm-imenu
+    index-item  SPC-j-i/I
+*** helm swoop
+    - SPC s s :: helm swoop
+** magit
+*** magit init commit
+    - SPC g s (magit status)
+    - Tab on file  :: diff
+    - S-l
+    - C-c C-c  :: to commit
+*** commit in action
+    - c a :: ammend
+    - l l :: show commit
+*** switch & action & option
+** windows
+*** how to split windows horizental
+    #+BEGIN_SRC elisp
+    (setq split-height-threshold nil)
+    (setq split-width-threshold 0)
+    #+END_SRC
+*** winner mode 
+    - SPC w u  :: windows undo
+    - SPC w U  :: windows redo
+    - SPC w W  :: ace window
+    - SPC w _  :: maximize horizentally
+*** window navigation
+    - M-[1-9] :: choose Nth window
+    - SPC-[1-9] :: the same
+    - SPC w m :: toggle maximize buffer
+    - SPC w _ :: maximize horizentally
+
