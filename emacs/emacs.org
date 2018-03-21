@@ -1,16 +1,18 @@
 *  emacs
 **  dired
-| key          | command              |
-|--------------+----------------------|
-| %            | dired command        |
-| !            | shell command        |
-| =            | dired diff           |
-| $            | hide directory       |
-| i on dir     | insert sub dir       |
-| <            | jump to prev sub dir |
-| >            | jump to next sub dir |
-| C-/ or C-x u | dired undo           |
-|              |                      |
+| key             | command              |
+|-----------------+----------------------|
+| %               | dired command        |
+| !               | shell command        |
+| =               | dired diff           |
+| $               | hide directory       |
+| i on dir        | insert sub dir       |
+| <               | jump to prev sub dir |
+| >               | jump to next sub dir |
+| C-/ or C-x u    | dired undo           |
+| find-name-dired | show certian file    |
+| find-dired      | find in dired        |
+|                 |                      |
 **  info
 
 | T	| Go to table of contents of the current Info file.
